@@ -3,7 +3,7 @@
 // import viteLogo from "./assets/vite.svg";
 // import heroImg from "./assets/hero.png";
 import "./App.css";
-import { Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -19,12 +19,14 @@ function App() {
   return (
     <>
       <Header />
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/experience" element={<Experience />} />
-      <Route path="/languages" element={<Languages />} />
-      <Route path="/contact" element={<Contact />} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/languages" element={<Languages />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </>
   );
