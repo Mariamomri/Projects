@@ -11,6 +11,7 @@ import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 import Languages from "./pages/Languages";
 import Contact from "./pages/Contact";
+import Stelle from "./components/Stelle";
 import Footer from "./components/Footer";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <Header />
+      <Stelle />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
