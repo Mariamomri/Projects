@@ -1,16 +1,59 @@
 import { NavLink } from "react-router-dom";
+import "../assets/styles/header.css";
 
 function Header() {
   return (
     <>
-      <div>Header</div>
-
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/skills">Skills</NavLink>
-      <NavLink to="/experience">Experience</NavLink>
-      <NavLink to="/languages">Languages</NavLink>
-      <NavLink to="/contact">Contact</NavLink>
+      <header className="header">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          to="/skills"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Skills
+        </NavLink>
+        <NavLink
+          to="/experience"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Experience
+        </NavLink>
+        <NavLink
+          to="/languages"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Languages
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Contact
+        </NavLink>
+      </header>
     </>
   );
 }

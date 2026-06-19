@@ -1,8 +1,8 @@
 function Contact() {
   return (
     <>
-      <div>Contact</div>;
-      <lu>
+      <div>Contact</div>
+      <ul>
         <li>
           <a href="https://github.com/vitejs/vite" target="_blank">
             <svg className="button-icon" role="presentation" aria-hidden="true">
@@ -19,7 +19,7 @@ function Contact() {
             Discord
           </a>
         </li>
-      </lu>
+      </ul>
     </>
   );
 }
