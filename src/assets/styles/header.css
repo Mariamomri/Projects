@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .nav-link {
-  @apply text-sm font-medium text-white hover:text-purple-400 transition-colors;
+  @apply text-sm font-medium text-white hover:text-purple-400 transition-colors m-4;
 }
 
 .nav-link.active {
@@ -10,4 +10,8 @@
 
 .header {
   @apply fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4;
+}
+
+.logo {
+  @apply font-black text-xl tracking-widest text-purple-500 hover:text-purple-400 transition-colors
 }
