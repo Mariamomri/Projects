@@ -21,14 +21,16 @@ function App() {
     <>
       <Header />
       <Stelle />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/languages" element={<Languages />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/languages" element={<Languages />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
